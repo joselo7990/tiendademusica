@@ -28,3 +28,20 @@ button {
 .sumandobtn {
     background-color: black;
 }
+
+h2 span {
+    color: green;
+}
+
+.boton {
+    position: fixed;
+    top: 20px;
+}
+
+.agregar {
+    right: 240px;
+}
+
+.comprar {
+    right: 20px;
+}
