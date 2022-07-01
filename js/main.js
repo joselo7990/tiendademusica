@@ -28,8 +28,12 @@ function agregarGuitarra() {
             break;
 
         default:
-            alert("Producto no encontrado")
+            const buscar = confirm("Producto no encontrado. Si quieres buscar de nuevo presiona Aceptar")
+            if (buscar == true) {
+                agregarGuitarra()
+            }
             break;
+
     }
 }
 
