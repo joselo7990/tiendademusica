@@ -6,7 +6,7 @@ for (let i = 1; i <= 10; i++) {
     resultado = tabla * i;
     console.log(tabla + " x " + i + " es igual a " + resultado);
 }
-//2 
+// Desafio 2 
 let total = 0
 
 function agregarGuitarra() {
@@ -52,4 +52,56 @@ function comprar() {
         alert("Gracias por tu compra.\n El total es $" + total + "\n Te regalamos el envio")
     } else { alert("Gracias por tu compra.\n El total es $" + (total + 50) + " envio incluido") }
 
+}
+
+// Ejemplos funciones y parametros //
+
+function instrumentosCaracteristicas(marca, anio) {
+    console.log("Felicitaciones has seleccionado un instrumento" + marca + "del año" + anio);
+
+}
+
+instrumentosCaracteristicas("Gibson", "2009");
+instrumentosCaracteristicas("Fender", "2015");
+
+// variables de un instrumento :
+
+let nombreIntrumento = ('Gibson');
+let anioInstrumento = (2009);
+let maderaInstrumento = ('kaboa');
+
+const intrumento1 = { marca: 'Gibson', anio: '2009', madera: 'kaboa', };
+const intrumento2 = { marca: 'Taylor', anio: '2015', madera: 'oscura', };
+
+console.log(intrumento1);
+console.log(intrumento2);
+
+//objeto literales
+console.log(intrumento1.madera);
+
+//objetos creadores 
+function bajo(marca, madera) {
+    this.marca = marca;
+    this.madera = madera;
+    this.cuerdas = 6; /*asumo que todos los intrumentos tienen 6 cuerdas, hardcodeo*/
+}
+
+const bajo1 = new bajo('has comprado una guitarra', 'fodera');
+const bajo2 = new bajo('fender');
+
+
+console.log(bajo1);
+console.log(bajo2.marca);
+
+//Desafio 3 Complementario (ARRAYS)
+
+const productos = [
+    { nombre: `Taylor`, precio: 500 },
+    { nombre: `Fender`, precio: 550 },
+    { nombre: `Gibson`, precio: 600 },
+    { nombre: `Gibson bass`, precio: 650 },
+];
+for (const objeto of productos) {
+    console.log(`Cuesta` + objeto.precio + `la guitarra` +
+        objeto.nombre);
 }
