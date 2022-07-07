@@ -96,12 +96,37 @@ console.log(bajo2.marca);
 //Desafio 3 Complementario (ARRAYS)
 
 const productos = [
-    { nombre: `Taylor`, precio: 500 },
-    { nombre: `Fender`, precio: 550 },
-    { nombre: `Gibson`, precio: 600 },
-    { nombre: `Gibson bass`, precio: 650 },
+    { nombre: `Taylor`, precio: 550 },
+    { nombre: `Fender`, precio: 600 },
+    { nombre: `Gibson`, precio: 650 },
+    { nombre: `Fender jazzbass`, precio: 700 },
 ];
 for (const objeto of productos) {
     console.log(`Cuesta` + objeto.precio + `la guitarra` +
         objeto.nombre);
 }
+
+// CLASE 7
+const myArray = [1, 2, 3, 4, 5, 6];
+
+myArray.forEach((x) => {
+    console.log('//////////////////////');
+    console.log(x);
+});
+
+const edades = [1, 2, 3, 4, 5, 6];
+
+edades.forEach((item) => {
+    console.log('//////////////////////');
+    console.log(item);
+});
+
+const cursos = [
+    { nombre: 'Javascript', precio: 15000 },
+    { nombre: 'ReactJS', precio: 22000 },
+    { nombre: 'backend', precio: 100 },
+];
+
+const resultado = cursos.find((item) => item.nombre === 'backend');
+
+console.log(resultado);
