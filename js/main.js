@@ -102,31 +102,10 @@ const productos = [
     { nombre: `Fender jazzbass`, precio: 700 },
 ];
 for (const objeto of productos) {
-    console.log(`Cuesta` + objeto.precio + `la guitarra` +
+    console.log(`Cuesta` +
+
+        objeto.precio +
+        `la guitarra` +
+
         objeto.nombre);
 }
-
-// CLASE 7
-const myArray = [1, 2, 3, 4, 5, 6];
-
-myArray.forEach((x) => {
-    console.log('//////////////////////');
-    console.log(x);
-});
-
-const edades = [1, 2, 3, 4, 5, 6];
-
-edades.forEach((item) => {
-    console.log('//////////////////////');
-    console.log(item);
-});
-
-const cursos = [
-    { nombre: 'Javascript', precio: 15000 },
-    { nombre: 'ReactJS', precio: 22000 },
-    { nombre: 'backend', precio: 100 },
-];
-
-const resultado = cursos.find((item) => item.nombre === 'backend');
-
-console.log(resultado);
