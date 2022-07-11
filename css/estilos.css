@@ -1,6 +1,17 @@
-* {
+/** {
     padding: 0;
     margin: 0;
+}*/
+
+
+/*HEADER*/
+
+.centre-text {
+    text-align: center;
+}
+
+.bold-text {
+    font-weight: bold;
 }
 
 body {
@@ -49,6 +60,7 @@ h2 span {
 .card-container {
     display: flex;
     flex-direction: row;
+    text-align: center;
     justify-content: space-between;
 }
 

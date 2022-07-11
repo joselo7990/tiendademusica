@@ -1,3 +1,7 @@
+//Header//
+
+
+
 //desafio 1//
 let tabla = 2;
 let resultado;
@@ -109,3 +113,68 @@ for (const objeto of productos) {
 
         objeto.nombre);
 }
+
+// Primera entrega del proyecto  realizar un carrito para ayudar al usuario a eleguir su compra
+//
+/*
+//bienvenido al usuario
+let nombreUsuario = prompt("Bienvenido Tu nombre es?", "Nombre");
+//declarando de lista de trareas 
+
+const GuitarrasALaVenta = ["Fender", "Gibson", "Taylor"];
+
+const BajosALaVenta = ["Fodera", "Gibson", "Fender"];
+
+const ambosInstrumentos = GuitarrasALaVenta.concat(BajosALaVenta);
+
+const tiendaOnLine = []
+
+
+// Menu de opciones al usuario
+
+let InstrumentosPreferidos = prompt("Las Marcas de guitarra que tenemos son  : Fender, Gibson, Taylor ; \n Las marcas de bajo que tenemos son  : Fender, Gibson, Fodera");
+
+// Seleccion de opciones por el ususairo
+
+if (InstrumentosPreferidos == 1) {
+    toDoList.push(GuitarrasALaVenta)
+} else if (InstrumentosPreferidos == 2) { toDoList.push(BajosALaVenta) } else if (InstrumentosPreferidos == 3) {
+    toDoList.push(ambosInstrumentos)
+}
+
+// Preguntarle al usuario cuantas tareas quiere agregar y le ofreceremos un prompt para que agrege segun sus gustos particular
+
+function agregarInstrumento() {
+    let cantidadIntrumenos = Number(prompt("Cuantos instrumentos deseas agregar"));
+    for (let i = 0; i < cantidadTarea; i++) {
+        let agregarInstrumento = prompt("Escriba aca que instrumento desea");
+        toDoList.push(agregarInstrumento);
+
+    }
+}
+
+// Invocamos la funcion que creamos para que el usuario pueda agregar tareas
+
+agregarInstrumento();
+
+// Aca usamos los backticks  para realizar una interpolacion de variables
+
+let consultaFinal = prompt(`${nombreUsuario} estas son tus tus instrumentos: ${tiendaOnLine},
+                          \n  Si quieres eliminar el ultimo instrumento escribe 1
+                          \n  Si quieres seguir agregando otra instrumento adicional escribe 2
+                          \n  Si no quieres hacer mas nada, escribe cualquier otro valor`)
+
+
+if (consultaFinal == 1) {
+    tiendaOnLine.pop();
+
+} else if (consultaFinal == "") {
+    agregarInstrumento();
+} else {
+    alert(`${nombreUsuario} estas son todos tus intrumentos eleguidos ${tiendaOnLine}`)
+}
+
+//Mostrar al usuario el resultado cuando eliminamos tareas o si no hacemos mas nada
+
+alert(`${nombreUsuario} estas son todos tus intrumenos eleguidos ${tiendaOnLine}`)
+*/
