@@ -113,7 +113,7 @@ for (const objeto of productos) {
 }
 
 
-// Primera entrega del proyecto  realizar un carrito para ayudar al usuario a eleguir su compra//
+
 
 /*
 class Producto {
@@ -164,11 +164,6 @@ while (categoria != "salir" && categoria != null) {
         alert = ("Selecione id del producto que desea comprar \n" + cartel);
     }
 }
-
-
-
-
-
 
 
 
