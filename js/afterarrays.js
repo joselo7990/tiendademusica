@@ -1,5 +1,5 @@
 // realizar un to-do-list para ayudar al usuario a llevar una vida saludable
-//to do list
+//to do list Profe Luis
 
 //bienvenido al usuario
 let nombreUsuario = prompt("Bienvenido a tu-do_list. Tu nombre es?", "Nombre");

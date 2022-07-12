@@ -1,7 +1,3 @@
-//Header//
-
-
-
 //desafio 1//
 let tabla = 2;
 let resultado;
@@ -10,7 +6,7 @@ for (let i = 1; i <= 10; i++) {
     resultado = tabla * i;
     console.log(tabla + " x " + i + " es igual a " + resultado);
 }
-// Desafio 2 
+// Desafio 2 + Entrega Proyecto Final
 let total = 0
 
 function agregarGuitarra() {
@@ -70,6 +66,8 @@ instrumentosCaracteristicas("Fender", "2015");
 
 // variables de un instrumento :
 
+
+
 let nombreIntrumento = ('Gibson');
 let anioInstrumento = (2009);
 let maderaInstrumento = ('kaboa');
@@ -87,15 +85,15 @@ console.log(intrumento1.madera);
 function bajo(marca, madera) {
     this.marca = marca;
     this.madera = madera;
-    this.cuerdas = 6; /*asumo que todos los intrumentos tienen 6 cuerdas, hardcodeo*/
+    this.cuerdas = 6; /*asumo que todos los intrumentos tienen 6 cuerdas, hardcodeo}*/
+
+    const bajo1 = new bajo('has comprado una guitarra', 'fodera');
+    const bajo2 = new bajo('fender');
+
+
+    console.log(bajo1);
+    console.log(bajo2.marca);
 }
-
-const bajo1 = new bajo('has comprado una guitarra', 'fodera');
-const bajo2 = new bajo('fender');
-
-
-console.log(bajo1);
-console.log(bajo2.marca);
 
 //Desafio 3 Complementario (ARRAYS)
 
@@ -114,8 +112,66 @@ for (const objeto of productos) {
         objeto.nombre);
 }
 
-// Primera entrega del proyecto  realizar un carrito para ayudar al usuario a eleguir su compra
-//
+
+// Primera entrega del proyecto  realizar un carrito para ayudar al usuario a eleguir su compra//
+
+/*
+class Producto {
+    constructor(id, nombre, precio, categoria) {
+        this.id = id;
+        this.nombre = nombre;
+        this.precio = precio;
+        this.categoria = categoria;
+    }
+}
+
+let productos = [
+    newProducto = (100, "Taylor", 550, "electroacustica"),
+    newProducto = (101, "Fender", 600, "electrica"),
+    newProducto = (102, "Gibson", 650, "electrica"),
+    newProducto = (103, "Fender", 700, "electrica"),
+];
+
+let categorias = ["electroacustica", "electrica"];
+
+let productosEnCarro = [];
+
+
+let categoria = "";
+
+while (categoria != "salir" && categoria != null) {
+    let aux = categorias.join(",");
+    categoria = prompt(
+        'Ingrese una categoria o ingrese "salir" : \n(' + aux + ")"
+    );
+
+    if (categoria != "salir") {
+        let productosFiltradoPorCategoria = productos.filter(item => item.categoria == categoria);
+
+        let cartel = "";
+        for (let i = 0; i < productosFiltradoPorCategoria.length; i++) {
+
+            cartel +=
+                "id:" +
+                productosFiltradoPorCategoria[i].id +
+                " precio: " +
+                productosFiltradoPorCategoria[i].precio +
+                " nombre: " +
+                productosFiltradoPorCategoria[i].nombre +
+                "\n";
+        }
+
+        alert = ("Selecione id del producto que desea comprar \n" + cartel);
+    }
+}
+
+
+
+
+
+
+
+
 /*
 //bienvenido al usuario
 let nombreUsuario = prompt("Bienvenido Tu nombre es?", "Nombre");
