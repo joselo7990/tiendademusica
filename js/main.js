@@ -6,7 +6,7 @@ for (let i = 1; i <= 10; i++) {
     resultado = tabla * i;
     console.log(tabla + " x " + i + " es igual a " + resultado);
 }
-// Desafio 2 + Entrega Proyecto Final
+// Desafio 2 + 1 erEntrega Proyecto Final + Dom//
 let total = 0
 
 function agregarGuitarra() {
@@ -112,6 +112,33 @@ for (const objeto of productos) {
         objeto.nombre);
 }
 
+
+// PAGINA DE SALIDA con DOM//´
+
+let nombreIngresado = '';
+let telIngresado = '';
+let emailIngresado = '';
+
+let boton = document.getElementById('btnPrincipal');
+let inputNombre = document.getElementById('input-nombre');
+let inputTel = document.getElementById('input-tel');
+let inputEmail = document.getElementById('input-email');
+
+inputNombre.addEventListener('input', () => {
+    nombreIngresado = inputNombre.value;
+});
+
+inputTel.addEventListener('input', () => {
+    telIngresado = inputTel.value;
+});
+
+inputEmail.addEventListener('input', () => {
+    emailIngresado = inputEmail.value;
+});
+
+boton.addEventListener('click', () => {
+    alert(nombreIngresado + ' ' + telIngresado + ' ' + emailIngresado);
+});
 
 
 
