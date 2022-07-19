@@ -1,11 +1,3 @@
-//desafio 1//
-let tabla = 2;
-let resultado;
-
-for (let i = 1; i <= 10; i++) {
-    resultado = tabla * i;
-    console.log(tabla + " x " + i + " es igual a " + resultado);
-}
 // Desafio 2 + 1 erEntrega Proyecto Final + Dom//
 let total = 0
 
