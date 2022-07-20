@@ -32,6 +32,7 @@ function agregar3() {
 
 function comprarGuitarras() {
     console.log(carrito)
+    localStorage.setItem("carrito", JSON.stringify(carrito))
 
 }
 /*let total = 0
